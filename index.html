@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-heading">💖 Will You Be My Valentine? 💖</h1>
+        <div class="heart-container">
+            <div class="heart"></div>
+            <div class="heart"></div>
+        </div>
+        <p class="message">I’ve got a lot of ❤️ for you! Please say YES!</p>
+        <div class="buttons">
+            <button class="yes-button" onclick="accept()">YES, I WILL!</button>
+            <button class="no-button" onclick="decline()">NO WAY!</button>
+        </div>
+    </div>
+
+    <script>
+        function accept() {
+            document.body.style.backgroundColor = "#ff99cc";
+            document.querySelector(".main-heading").innerHTML = "YAY!! You’re my Valentine! 💖";
+            document.querySelector(".message").innerHTML = "I’m so happy!! Let's make this the best Valentine’s Day ever! 😍";
+        }
+
+        function decline() {
+            document.body.style.backgroundColor = "#f2f2f2";
+            document.querySelector(".main-heading").innerHTML = "Oh no! Maybe next time? 😔";
+            document.querySelector(".message").innerHTML = "Well, that's okay... maybe we can still be friends. 💕";
+        }
+    </script>
+</body>
+</html>
 
